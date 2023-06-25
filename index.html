@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +35,7 @@
     <!-- Navegaion -->
     <nav
       class="navbar navbar-expand-lg bg-alpha-color sticky-top"
-      data-bs-theme="ligth"
+      data-bs-theme="light"
     >
       <!-- logo y titulo -->
       <div class="container">
@@ -66,19 +66,33 @@
               <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="caaguazu.html#mapas">Mapa</a>
+              <a class="nav-link" href="index.html#mapas">Mapa</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="caaguazu.html#carouselExampleCaptions"
-                >Obras</a
+
+            <li class="nav-item dropdown" data-bs-theme="light">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Obras
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="caaguazu.html#florido"
+                    >Caaguazu</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Inicio -->
-    <section class="itaipu-fondo p-5 z-0">
+    <section class="itaipu-fondo p-2">
       <div class="container min-vh-100 mb-5">
         <section class="position-relative text-center mb-3 z-3">
           <h1 class="fw-bold">OBRAS SOCIALES</h1>
@@ -86,10 +100,13 @@
         </section>
         <section class="row align-content-center align-items-center">
           <article class="col-12 col-md-6 z-3">
-            <h4 class="mb-5 text-success fw-bold">
+            <h4 class="mb-4 text-success fw-bold">
               CONSTRUCCIÓN DE 131 UNIDADES DE SALUD DE LA FAMILIA
             </h4>
-            <p>
+            <a href="#cards" class="btn btn-lg btn-success text-white"
+              >Ver obras</a
+            >
+            <p class="mt-4 fw-semibold">
               Desde el 2018, la ITAIPU Binacional lleva adelante la construcción
               y equipamiento de 131 modernas Unidades de Salud de la Familia
               (USF) en los Departamentos de Alto Paraná, Central, Caaguazú,
@@ -100,8 +117,8 @@
             </p>
           </article>
           <!-- Mapas -->
-          <article class="col-12 col-md-6 z-3" id="mapas">
-            <div class="container vh-80 z-3">
+          <article class="col-md-6 z-3" id="mapas">
+            <div class="container-fluid vh-80 z-3">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=13xObAjgvbJfHeNNsokF-0e62Tt7-OGay&ehbc=2E312F"
                 class="w-100 h-100"
@@ -113,8 +130,8 @@
     </section>
     <!-- Cards -->
     <section
-      id="servicios"
-      class="row min-vh-100 align-items-lg-center align-content-center mx-0"
+      id="cards"
+      class="row min-vh-100 align-items-lg-center align-content-center mx-0 mt-5"
     >
       <h2 class="display-6 text-center mb-5 text-usf fw-bold">
         DISTRIBUCIÓN DE UNIDADES DE SALUD DE LA FAMILIA
@@ -132,8 +149,12 @@
             <p class="card-text">
               ¿Necesitas un (nuevo) sitio web 100% responsivo?
             </p>
-            <a href="sitios.html" class="text-third"
-              >Más detalles <i class="bi bi-chevron-right"></i
+            <a
+              href="#"
+              class="text-success"
+              data-bs-toggle="modal"
+              data-bs-target="#central"
+              >Mas Detalles <i class="bi bi-chevron-right"></i
             ></a>
           </div>
         </div>
@@ -148,8 +169,12 @@
           <div class="card-body">
             <h5 class="card-title">Departamento Caaguazu</h5>
             <p class="card-text">Clientes felices y proyectos hermosos.</p>
-            <a href="clientes.html" class="text-third"
-              >Más detalles <i class="bi bi-chevron-right"></i
+            <a
+              href="#"
+              class="text-success"
+              data-bs-toggle="modal"
+              data-bs-target="#caaguazu"
+              >Mas Detalles <i class="bi bi-chevron-right"></i
             ></a>
           </div>
         </div>
@@ -166,8 +191,12 @@
             <p class="card-text">
               Escucho tus necesidades. Discutamos tu proyecto.
             </p>
-            <a href="comencemos.html" class="text-third"
-              >Más detalles <i class="bi bi-chevron-right"></i
+            <a
+              href="#"
+              class="text-success"
+              data-bs-toggle="modal"
+              data-bs-target="#alto-parana"
+              >Mas Detalles <i class="bi bi-chevron-right"></i
             ></a>
           </div>
         </div>
@@ -182,13 +211,170 @@
           <div class="card-body">
             <h5 class="card-title">Region Occidental</h5>
             <p class="card-text">Comencemos con tu nuevo proyecto.</p>
-            <a href="contacto.html" class="text-third"
-              >Más detalles <i class="bi bi-chevron-right"></i
+            <a
+              href="#"
+              class="text-success"
+              data-bs-toggle="modal"
+              data-bs-target="#occidental"
+              >Mas Detalles <i class="bi bi-chevron-right"></i
             ></a>
           </div>
         </div>
       </article>
+      <!-- Modal 1-->
+      <div
+        class="modal fade"
+        id="central"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Departamento Central
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Fueron realizadas inversiones en infraestructura hospitalaria
+                para la construcción y el equipamiento de 25 Unidades de Salud
+                de la Familia (USF) que ayudarán a potenciar la estrategia de
+                Atención Primaria de la Salud en los departamentos con mayor
+                población comoCentral.
+              </p>
+              <img
+                src="img/home-central.jpg"
+                alt="Commerce AI"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 2-->
+      <div
+        class="modal fade"
+        id="caaguazu"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Departamento Caaguazu
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Fueron realizadas inversiones en infraestructura hospitalaria
+                para la construcción y el equipamiento de 24 Unidades de Salud
+                de la Familia (USF) que ayudarán a potenciar la estrategia de
+                Atención Primaria de la Salud en los distintos distritos del
+                departamento.
+              </p>
+              <img
+                src="img/home-caaguazu.jpg"
+                alt="Walkers"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 3-->
+      <div
+        class="modal fade"
+        id="alto-parana"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Departamento Alto Parana
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Fueron realizadas inversiones en infraestructura hospitalaria
+                para la construcción y el equipamiento de 46 Unidades de Salud
+                de la Familia (USF) que ayudarán a potenciar la estrategia de
+                Atención Primaria de la Salud en los departamentos con mayor
+                población como Alto Paraná.
+              </p>
+              <img
+                src="img/home-alto-parana.jpg"
+                alt="Hey Textile"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 4-->
+      <div
+        class="modal fade"
+        id="occidental"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Region Occidental
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Fueron realizadas inversiones en infraestructura hospitalaria
+                para la construcción y el equipamiento de 18 Unidades de Salud
+                de la Familia (USF) que ayudarán a potenciar la estrategia de
+                Atención Primaria de la Salud en los distintos departamentos
+                dela región.
+              </p>
+              <img
+                src="img/home-occidental.jpg"
+                alt="Basis Networks"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- Footer -->
     <footer class="bg-dark p-3">
       <div class="container text-center">
         <small class="text-white"
@@ -201,6 +387,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

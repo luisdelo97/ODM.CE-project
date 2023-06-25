@@ -3,8 +3,14 @@ const bsCollapse = new bootstrap.Collapse("#navbarNavDropdown", {
 });
 
 document.addEventListener("click", (e) => {
-  if (!e.target.matches(".navbar-collapse a")) return false;
-  setTimeout(() => {
-    bsCollapse.hide();
-  }, 1000);
+  // console.log(!e.target.matches(".navbar"));
+  if (
+    e.target.matches(".navbar-collapse a") ||
+    !e.target.matches(".navbar *")
+  ) {
+    setTimeout(() => {
+      bsCollapse.hide();
+    }, 2000);
+  }
+  return false;
 });
