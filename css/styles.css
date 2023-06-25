@@ -9,7 +9,7 @@
   --link-color: rgb(99, 99, 99);
   --link-alpha-color: rgba(80, 158, 227, 0.75);
 
-  --bg-color: rgb(245, 245, 245);
+  --bg-color: rgb(249, 242, 242);
   --bg-alpha-color: rgb(206, 206, 206, 0.75);
 }
 
@@ -37,6 +37,16 @@ a:hover {
 .bg-second-alpha-color {
   background-color: var(--second-alpha-color);
 }
+
+.border-dash {
+  border: gray dashed;
+  transition: all 0.3s ease-out;
+}
+.border-dash:hover {
+  border: rgb(255, 178, 64) dashed;
+  box-shadow: 0.5rem 0.08rem 0.08rem gray;
+}
+
 .itaipu-fondo {
   position: relative;
   background-image: url(../img/fondo-itaipu.jpg);
@@ -44,6 +54,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  z-index: 0;
 }
 .itaipu-fondo::after {
   content: "";
@@ -53,6 +64,7 @@ a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(245, 245, 245, 0.8); /* Opacidad del 50% */
+  z-index: 1;
 }
 
 .text-gray {
@@ -81,6 +93,13 @@ a:hover {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff' %3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.z-i {
+  z-index: 999 !important;
+  color: black;
+  display: block;
+  position: relative;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)

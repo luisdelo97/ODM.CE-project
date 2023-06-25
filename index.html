@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio | Presentación de Obras</title>
+    <!-- bootstrap stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="img/itaipu2015_favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Navegaion -->
+    <nav
+      class="navbar navbar-expand-lg bg-alpha-color sticky-top"
+      data-bs-theme="ligth"
+    >
+      <!-- logo y titulo -->
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo_itaipu_transp.png" alt="bad-dog"
+          /></a>
+          <a href="#" class="nav-link text-center d-none d-lg-block"
+            >DIRECCIÓN DE COORDINACIÓN EJECUTIVA</a
+          >
+        </div>
+        <!-- hamburguesa button -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- items de nav -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="caaguazu.html#mapas">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="caaguazu.html#carouselExampleCaptions"
+                >Obras</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Inicio -->
+    <section class="itaipu-fondo p-5 z-0">
+      <div class="container min-vh-100 mb-5">
+        <section class="position-relative text-center mb-3 z-3">
+          <h1 class="fw-bold">OBRAS SOCIALES</h1>
+          <h2 class="fw-bold text-warning">UNIDADES DE SALUD DE LA FAMILIA</h2>
+        </section>
+        <section class="row align-content-center align-items-center">
+          <article class="col-12 col-md-6 z-3">
+            <h4 class="mb-5 text-success fw-bold">
+              CONSTRUCCIÓN DE 131 UNIDADES DE SALUD DE LA FAMILIA
+            </h4>
+            <p>
+              Desde el 2018, la ITAIPU Binacional lleva adelante la construcción
+              y equipamiento de 131 modernas Unidades de Salud de la Familia
+              (USF) en los Departamentos de Alto Paraná, Central, Caaguazú,
+              Boquerón, Alto Paraguay y Pte. Hayes; estas obras dan empleo a más
+              de 4.000 trabajadores y benefician a los habitantes de un
+              territorio social determinado con unas 3.500 a 5.000 personas, de
+              los sectores más vulnerables.
+            </p>
+          </article>
+          <!-- Mapas -->
+          <article class="col-12 col-md-6 z-3" id="mapas">
+            <div class="container vh-80 z-3">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=13xObAjgvbJfHeNNsokF-0e62Tt7-OGay&ehbc=2E312F"
+                class="w-100 h-100"
+              ></iframe>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <!-- Cards -->
+    <section
+      id="servicios"
+      class="row min-vh-100 align-items-lg-center align-content-center mx-0"
+    >
+      <h2 class="display-6 text-center mb-5 text-usf fw-bold">
+        DISTRIBUCIÓN DE UNIDADES DE SALUD DE LA FAMILIA
+      </h2>
+      <article class="col-12 col-md-6 col-xl-3 d-flex">
+        <div class="card mx-auto mb-3 border-dash" style="width: 18rem">
+          <img
+            src="img/home-central.jpg"
+            class="card-img-top bg-third-color"
+            alt="Sitios"
+            style="height: 13.5rem; object-fit: cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Departamento Central</h5>
+            <p class="card-text">
+              ¿Necesitas un (nuevo) sitio web 100% responsivo?
+            </p>
+            <a href="sitios.html" class="text-third"
+              >Más detalles <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-xl-3 d-flex">
+        <div class="card mx-auto mb-3 border-dash" style="width: 18rem">
+          <img
+            src="img/home-caaguazu.jpg"
+            class="card-img-top bg-third-color"
+            alt="Clientes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Departamento Caaguazu</h5>
+            <p class="card-text">Clientes felices y proyectos hermosos.</p>
+            <a href="clientes.html" class="text-third"
+              >Más detalles <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-xl-3 d-flex">
+        <div class="card mx-auto mb-3 border-dash" style="width: 18rem">
+          <img
+            src="img/home-alto-parana.jpg"
+            class="card-img-top bg-third-color"
+            alt="Flujo de Trabajo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Departamento Alto Parana</h5>
+            <p class="card-text">
+              Escucho tus necesidades. Discutamos tu proyecto.
+            </p>
+            <a href="comencemos.html" class="text-third"
+              >Más detalles <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-xl-3 d-flex">
+        <div class="card mx-auto mb-3 border-dash" style="width: 18rem">
+          <img
+            src="img/home-occidental.jpg"
+            class="card-img-top bg-third-color"
+            alt="¿Interesado?"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Region Occidental</h5>
+            <p class="card-text">Comencemos con tu nuevo proyecto.</p>
+            <a href="contacto.html" class="text-third"
+              >Más detalles <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="bg-dark p-3">
+      <div class="container text-center">
+        <small class="text-white"
+          >&copy; 2023 Hecho por <b>Luis Delorenzi</b>.</small
+        >
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
