@@ -14,3 +14,15 @@ document.addEventListener("click", (e) => {
   }
   return false;
 });
+// document.addEventListener("DOMContentLoaded", function () {
+//   const images = document.querySelectorAll("img");
+//   const iframes = document.querySelectorAll("iframe");
+
+//   images.forEach(function (img) {
+//     img.setAttribute("loading", "lazy");
+//   });
+
+//   iframes.forEach(function (iframe) {
+//     iframe.setAttribute("loading", "lazy");
+//   });
+// });
